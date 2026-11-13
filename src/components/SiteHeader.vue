@@ -20,7 +20,7 @@ const close = () => { open.value = false }
         <RouterLink to="/referenzen" class="nav-link">Referenzen</RouterLink>
         <a href="/#ueber-uns" class="nav-link">Über uns</a>
       </nav>
-      <RouterLink to="/kontakt" class="btn-primary hidden !px-5 !py-3 lg:inline-flex">Beratung anfragen <ArrowUpRight :size="15" /></RouterLink>
+      <RouterLink to="/kontakt" class="btn-primary !hidden !px-5 !py-3 lg:!inline-flex">Beratung anfragen <ArrowUpRight :size="15" /></RouterLink>
       <button class="rounded border border-[#d9ddd5] p-2 lg:hidden" aria-label="Menü öffnen" @click="open = !open">
         <X v-if="open" :size="20" /><Menu v-else :size="20" />
       </button>
