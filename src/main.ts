@@ -5,6 +5,7 @@ import HomeView from './views/HomeView.vue'
 import ServiceView from './views/ServiceView.vue'
 import ProjectsView from './views/ProjectsView.vue'
 import ContactView from './views/ContactView.vue'
+import reveal from './directives/reveal'
 import './style.css'
 
 const router = createRouter({
@@ -19,4 +20,6 @@ const router = createRouter({
   ],
 })
 
-createApp(App).use(router).mount('#app')
+const app = createApp(App)
+app.directive('reveal', reveal)
+app.use(router).mount('#app')

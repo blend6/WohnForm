@@ -21,23 +21,27 @@ const close = () => { open.value = false }
         <a href="/#ueber-uns" class="nav-link">Über uns</a>
       </nav>
       <RouterLink to="/kontakt" class="btn-primary !hidden !px-5 !py-3 lg:!inline-flex">Beratung anfragen <ArrowUpRight :size="15" /></RouterLink>
-      <button class="rounded border border-[#d9ddd5] p-2 lg:hidden" aria-label="Menü öffnen" @click="open = !open">
+      <button class="rounded border border-[#d9ddd5] p-2 transition-transform duration-300 hover:scale-105 active:scale-95 lg:hidden" aria-label="Menü öffnen" @click="open = !open">
         <X v-if="open" :size="20" /><Menu v-else :size="20" />
       </button>
     </div>
-    <div v-if="open" class="border-t border-[#e7e8e2] bg-[#f7f7f4] px-5 py-5 lg:hidden">
-      <nav class="container-shell flex flex-col gap-5">
-        <RouterLink to="/" @click="close">Startseite</RouterLink>
-        <a href="/#leistungen" @click="close">Leistungen</a>
-        <RouterLink to="/referenzen" @click="close">Referenzen</RouterLink>
-        <a href="/#ueber-uns" @click="close">Über uns</a>
-        <RouterLink to="/kontakt" class="btn-primary w-full" @click="close">Beratung anfragen</RouterLink>
-      </nav>
-    </div>
+    <Transition name="menu">
+      <div v-if="open" class="border-t border-[#e7e8e2] bg-[#f7f7f4] px-5 py-5 lg:hidden">
+        <nav class="container-shell flex flex-col gap-5">
+          <RouterLink to="/" @click="close">Startseite</RouterLink>
+          <a href="/#leistungen" @click="close">Leistungen</a>
+          <RouterLink to="/referenzen" @click="close">Referenzen</RouterLink>
+          <a href="/#ueber-uns" @click="close">Über uns</a>
+          <RouterLink to="/kontakt" class="btn-primary w-full" @click="close">Beratung anfragen</RouterLink>
+        </nav>
+      </div>
+    </Transition>
   </header>
 </template>
 
 <style scoped>
 .nav-link { color:#5f665d; font-size:13px; font-weight:600; transition:color .2s; }
 .nav-link:hover { color:#20231f; }
+.menu-enter-active, .menu-leave-active { transition:opacity .2s ease, transform .2s ease; }
+.menu-enter-from, .menu-leave-to { opacity:0; transform:translateY(-8px); }
 </style>
