@@ -28,7 +28,7 @@ const year = new Date().getFullYear()
       <div class="f-col">
         <h4>Kontakt</h4>
         <span>{{ contact.owner }}</span>
-        <a :href="contact.phoneHref">{{ contact.phone }}</a>
+        <a :href="contact.whatsappHref" target="_blank" rel="noopener">{{ contact.phone }}</a>
         <a :href="`mailto:${contact.email}`">{{ contact.email }}</a>
         <span>{{ contact.street }}<br>{{ contact.city }}</span>
         <span>{{ contact.hours }}</span>

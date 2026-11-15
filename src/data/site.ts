@@ -9,7 +9,8 @@ export const contact = {
   street: 'Kohlenstraße 3b',
   city: '86971 Peiting',
   phone: '0157 55132616',
-  phoneHref: 'tel:+4915755132616',
+  /** Klick auf die Nummer öffnet direkt den WhatsApp-Chat */
+  whatsappHref: 'https://wa.me/4915755132616',
   email: 'Prvetica.Bajram@web.de',
   hours: 'Mo–Fr 07:00–17:00 Uhr',
 } as const

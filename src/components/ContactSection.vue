@@ -41,7 +41,7 @@ const bad = '#B4444A'
         <p class="lead reveal">Wir sind für Sie da. Rufen Sie an oder schreiben Sie uns — wir melden uns innerhalb eines Werktags.</p>
 
         <ul class="contact-list">
-          <li class="reveal"><i class="ci ci-phone" /><a :href="contact.phoneHref">{{ contact.phone }}</a><span>{{ contact.hours }}</span></li>
+          <li class="reveal"><i class="ci ci-phone" /><a :href="contact.whatsappHref" target="_blank" rel="noopener">{{ contact.phone }}</a><span>WhatsApp · {{ contact.hours }}</span></li>
           <li class="reveal"><i class="ci ci-mail" /><a :href="`mailto:${contact.email}`">{{ contact.email }}</a><span>Antwort in 24 h</span></li>
           <li class="reveal"><i class="ci ci-pin" /><span class="strong">{{ contact.street }}, {{ contact.city }}</span><span>Inhaber: {{ contact.owner }}</span></li>
         </ul>

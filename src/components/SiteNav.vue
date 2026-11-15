@@ -26,7 +26,7 @@ onBeforeUnmount(() => window.removeEventListener('scroll', onScroll))
     </nav>
 
     <div class="nav-right">
-      <a :href="contact.phoneHref" class="nav-phone">{{ contact.phone }}</a>
+      <a :href="contact.whatsappHref" target="_blank" rel="noopener" class="nav-phone">{{ contact.phone }}</a>
       <a href="#kontakt" class="btn btn-solid nav-cta">Kontakt</a>
       <button
         class="burger"
