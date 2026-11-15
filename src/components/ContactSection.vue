@@ -25,6 +25,7 @@ async function submit() {
       phone: form.tel.trim() || '—',
       topic: form.topic,
       message: form.msg.trim() || '—',
+      time: new Date().toLocaleString('de-DE', { dateStyle: 'medium', timeStyle: 'short' }),
     })
     status.value = 'ok'
     Object.assign(form, empty())
