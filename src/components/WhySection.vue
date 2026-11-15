@@ -6,7 +6,7 @@ import { whyPoints } from '../data/site'
   <section id="ueber-uns" class="section why">
     <div class="wrap why-grid">
       <div class="why-copy">
-        <p class="eyebrow reveal">Warum WOHNFORM?</p>
+        <p class="eyebrow reveal">Warum WOHNFORM BP?</p>
         <h2 class="reveal">Regional verwurzelt.<br>Handwerklich kompromisslos.</h2>
         <p class="lead reveal">Wir sind kein anonymer Onlineshop. Wir kommen zu Ihnen, messen selbst auf, montieren mit eigenen Fachkräften und sind auch danach erreichbar.</p>
 

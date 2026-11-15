@@ -13,6 +13,6 @@ defineProps<{ done: boolean }>()
         <path class="dl" d="M72 20 L104 20" />
       </g>
     </svg>
-    <span class="pre-word">WOHNFORM</span>
+    <span class="pre-word">WOHNFORM BP</span>
   </div>
 </template>
