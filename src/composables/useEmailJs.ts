@@ -5,9 +5,9 @@ import emailjs from '@emailjs/browser'
  * Schutz erfolgt über "Allowed origins" im EmailJS-Dashboard.
  * Umgebungsvariablen (VITE_EMAILJS_*) überschreiben die Standardwerte.
  */
-const SERVICE_ID: string = import.meta.env.VITE_EMAILJS_SERVICE_ID || 'service_5pxmsro'
-const TEMPLATE_ID: string = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || 'template_5fwiyz9'
-const PUBLIC_KEY: string = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || '__ZbDXfI_CnMx05Rg'
+const SERVICE_ID: string = import.meta.env.VITE_EMAILJS_SERVICE_ID || 'service_sc1ez66'
+const TEMPLATE_ID: string = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || 'template_5srk6vs'
+const PUBLIC_KEY: string = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || 'Ydhfp-PnOhYATaKVS'
 
 export const emailJsConfigured = Boolean(SERVICE_ID && TEMPLATE_ID && PUBLIC_KEY)
 
