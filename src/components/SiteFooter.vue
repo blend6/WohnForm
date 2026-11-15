@@ -10,7 +10,7 @@ const year = new Date().getFullYear()
     <div class="wrap footer-grid">
       <div class="f-brand">
         <BrandMark large />
-        <b>WOHNFORM BP</b><i>Fenster · Türen · Rollläden</i>
+        <b>WOHNFORM-BP</b><i>Fenster · Türen · Rollläden</i>
         <p class="f-claim">Qualität, die man sieht.<br>Handwerk, dem man vertraut.</p>
         <p class="mt-4 text-xs font-bold tracking-[.22em] text-white/40">{{ brands.join(' · ') }}</p>
       </div>
@@ -36,7 +36,7 @@ const year = new Date().getFullYear()
     </div>
 
     <div class="wrap footer-bar">
-      <span>© {{ year }} WOHNFORM BP · Fenster · Türen · Rollläden</span>
+      <span>© {{ year }} WOHNFORM-BP · Fenster · Türen · Rollläden</span>
       <span class="f-legal"><a href="#">Impressum</a><a href="#">Datenschutz</a></span>
     </div>
   </footer>

@@ -13,10 +13,10 @@ onBeforeUnmount(() => window.removeEventListener('scroll', onScroll))
 
 <template>
   <header class="nav" :class="{ open, solid }">
-    <a href="#top" class="nav-brand" aria-label="WOHNFORM BP Startseite">
+    <a href="#top" class="nav-brand" aria-label="WOHNFORM-BP Startseite">
       <BrandMark />
       <span class="brand-text">
-        <b>WOHNFORM BP</b>
+        <b>WOHNFORM-BP</b>
         <i>Fenster · Türen · Rollläden</i>
       </span>
     </a>
