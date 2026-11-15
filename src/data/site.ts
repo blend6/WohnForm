@@ -1,5 +1,4 @@
 import type { NavLink, TrustItem, Service, Layer, WhyPoint, Step, Reference } from '../types'
-import refHaus from '../assets/img/ref-haus.jpg'
 import refTuer from '../assets/img/ref-tuer.jpg'
 import refRollladen from '../assets/img/ref-rollladen.jpg'
 import refTerrasse from '../assets/img/ref-terrasse.jpg'
@@ -7,7 +6,7 @@ import refTerrasse from '../assets/img/ref-terrasse.jpg'
 /** Kontaktdaten laut Flyer */
 export const contact = {
   owner: 'Bajram Prvetica',
-  street: 'Köklenstraße 3b',
+  street: 'Kohlenstraße 3b',
   city: '86971 Peiting',
   phone: '0157 55132616',
   phoneHref: 'tel:+4915755132616',
@@ -26,7 +25,7 @@ export const navLinks: NavLink[] = [
 ]
 
 export const trust: TrustItem[] = [
-  { count: 27, label: 'Jahre Erfahrung' },
+  { count: 15, label: 'Jahre Erfahrung' },
   { count: 1400, suffix: '+', label: 'montierte Elemente' },
   { count: 100, suffix: '%', label: 'eigene Monteure' },
   { count: 5, suffix: ' J.', label: 'Gewährleistung' },
@@ -61,7 +60,7 @@ export const layers: Layer[] = [
 ]
 
 export const whyPoints: WhyPoint[] = [
-  { title: 'Erfahrung und Fachkompetenz', text: 'Über zwei Jahrzehnte Praxis am Bau und im Bestand.' },
+  { title: 'Erfahrung und Fachkompetenz', text: 'Über 15 Jahre Praxis am Bau und im Bestand.' },
   { title: 'Individuelle Beratung und Planung', text: 'Vor Ort, ehrlich und ohne Verkaufsdruck.' },
   { title: 'Hochwertige Produkte namhafter Hersteller', text: 'Markenqualität von VEKA, GEALAN und SCHÜCO statt Billigimport.' },
   { title: 'Saubere Montage durch Fachpersonal', text: 'Fachgerecht, zuverlässig und termingerecht.' },
@@ -76,13 +75,10 @@ export const steps: Step[] = [
 ]
 
 export const references: Reference[] = [
-  { img: refHaus, alt: 'Neubau mit anthrazitfarbenen Aluminium-Fenstern', vis: 'vis-house', size: 'lg',
-    tag: 'Neubau · Peiting', title: 'Einfamilienhaus, 24 Elemente',
-    text: 'Aluminium-Fenster anthrazit, Hebeschiebetür 4 m, elektrische Raffstores.' },
   { img: refTuer, alt: 'Anthrazitfarbene Aluminium-Haustür mit Griffstange', vis: 'vis-door',
     tag: 'Sanierung · Schongau', title: 'Haustür & Nebeneingang',
     text: 'Aluminium-Haustür RC2 mit Fingerprint.' },
-  { img: refRollladen, alt: 'Fassade mit neuen Fenstern und Rollläden', vis: 'vis-shutter',
+  { img: refRollladen, alt: 'Fassade mit neuen Fenstern und Rollläden', vis: 'vis-shutter', size: 'lg',
     tag: 'Bestand · Weilheim', title: 'Rollladen-Nachrüstung',
     text: '14 Vorbaurollläden, funkgesteuert.' },
   { img: refTerrasse, alt: 'Terrassenfront mit Raffstore-Sonnenschutz', vis: 'vis-terrace', size: 'wide',
