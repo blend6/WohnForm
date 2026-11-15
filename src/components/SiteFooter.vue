@@ -1,36 +1,43 @@
 <script setup lang="ts">
-import { MapPin, Phone, Mail, Facebook, Instagram } from 'lucide-vue-next'
+import BrandMark from './BrandMark.vue'
+import { contact, services, brands } from '../data/site'
+
+const year = new Date().getFullYear()
 </script>
+
 <template>
-  <footer class="bg-[#222922] text-white">
-    <div v-reveal class="container-shell grid gap-8 py-12 md:grid-cols-[1.4fr_1fr_1fr]">
-      <div>
-        <div class="mb-5 flex items-center gap-3"><span class="grid h-9 w-9 place-items-center bg-white text-sm font-bold text-[#293128]">W.</span><span class="font-display text-xl font-extrabold">WOHNFORM.</span></div>
-        <p class="max-w-sm text-sm leading-7 text-white/60">Fenster, Türen und Lösungen rund um Ihr Zuhause. Persönlich beraten. Sorgfältig umgesetzt.</p>
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div class="f-brand">
+        <BrandMark large />
+        <b>WOHNFORM</b><i>Fenster · Türen · Rollläden</i>
+        <p class="f-claim">Qualität, die man sieht.<br>Handwerk, dem man vertraut.</p>
+        <p class="mt-4 text-xs font-bold tracking-[.22em] text-white/40">{{ brands.join(' · ') }}</p>
       </div>
-      <div>
-        <p class="mb-5 text-xs font-bold uppercase tracking-[.16em] text-[#a9b4a4]">Navigation</p>
-        <div class="flex flex-col gap-3 text-sm text-white/70">
-          <RouterLink to="/">Startseite</RouterLink><a href="/#leistungen">Leistungen</a><RouterLink to="/referenzen">Referenzen</RouterLink><RouterLink to="/kontakt">Kontakt</RouterLink>
-        </div>
+
+      <div class="f-col">
+        <h4>Leistungen</h4>
+        <a v-for="s in services" :key="s.title" href="#leistungen">{{ s.title }}</a>
       </div>
-      <div>
-        <p class="mb-5 text-xs font-bold uppercase tracking-[.16em] text-[#a9b4a4]">Kontakt</p>
-        <div class="flex flex-col gap-4 text-sm text-white/70">
-          <p class="flex items-start gap-3"><MapPin :size="16" class="mt-0.5 shrink-0"/> Adresse nach Unternehmensfreigabe ergänzen</p>
-          <p class="flex items-center gap-3"><Phone :size="16"/> Telefonnummer ergänzen</p>
-          <p class="flex items-center gap-3"><Mail :size="16"/> E-Mail-Adresse ergänzen</p>
-        </div>
-        <div class="mt-6 flex gap-3">
-          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook öffnen" class="social-link grid h-10 w-10 place-items-center rounded-full border border-white/20 text-white hover:bg-white hover:text-[#293128]">
-            <Facebook :size="18"/>
-          </a>
-          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram öffnen – Weiterleitung zur Facebook-Startseite" class="social-link grid h-10 w-10 place-items-center rounded-full border border-white/20 text-white hover:bg-white hover:text-[#293128]">
-            <Instagram :size="18"/>
-          </a>
-        </div>
+
+      <div class="f-col">
+        <h4>Unternehmen</h4>
+        <a href="#ueber-uns">Über uns</a><a href="#referenzen">Referenzen</a><a href="#ablauf">Ablauf</a><a href="#kontakt">Kontakt</a>
+      </div>
+
+      <div class="f-col">
+        <h4>Kontakt</h4>
+        <span>{{ contact.owner }}</span>
+        <a :href="contact.phoneHref">{{ contact.phone }}</a>
+        <a :href="`mailto:${contact.email}`">{{ contact.email }}</a>
+        <span>{{ contact.street }}<br>{{ contact.city }}</span>
+        <span>{{ contact.hours }}</span>
       </div>
     </div>
-    <div class="border-t border-white/10"><div class="container-shell flex flex-col justify-between gap-3 py-5 text-xs text-white/45 sm:flex-row"><span>© {{ new Date().getFullYear() }} WOHNFORM. Alle Rechte vorbehalten.</span><div class="flex gap-5"><a href="#" aria-label="Impressum Platzhalter">Impressum</a><a href="#" aria-label="Datenschutz Platzhalter">Datenschutz</a></div></div></div>
+
+    <div class="wrap footer-bar">
+      <span>© {{ year }} WOHNFORM · Fenster · Türen · Rollläden</span>
+      <span class="f-legal"><a href="#">Impressum</a><a href="#">Datenschutz</a></span>
+    </div>
   </footer>
 </template>

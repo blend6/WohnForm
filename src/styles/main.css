@@ -1,0 +1,15 @@
+/* Tailwind v4 – Preflight & Utilities */
+@import "tailwindcss";
+/* Komponenten-Styles 1:1 aus dem Original (unlayered → schlagen Tailwind-Base) */
+@import "./site.css";
+
+/* Marken-Tokens zusätzlich als Tailwind-Farben (bg-ink, text-muted, …) */
+@theme {
+  --color-ink: #16191D;
+  --color-graphite: #2E343B;
+  --color-paper-2: #F2F3F5;
+  --color-muted: #6B747E;
+  --color-glass: #9DB8CB;
+  --color-warm: #E9B77A;
+  --font-sans: 'Archivo', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
