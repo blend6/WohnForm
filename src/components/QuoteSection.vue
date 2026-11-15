@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import montage from '../assets/img/montage.jpg'
+import montage from '../assets/img/montage.webp'
 </script>
 
 <template>

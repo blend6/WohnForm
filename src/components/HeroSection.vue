@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import hero from '../assets/img/hero.jpg'
+import hero from '../assets/img/hero.webp'
 </script>
 
 <template>

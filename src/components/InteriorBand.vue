@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import interior from '../assets/img/interior.jpg'
+import interior from '../assets/img/interior.webp'
 </script>
 
 <template>

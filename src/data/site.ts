@@ -1,7 +1,7 @@
 import type { NavLink, TrustItem, Service, Layer, WhyPoint, Step, Reference } from '../types'
-import refTuer from '../assets/img/ref-tuer.jpg'
-import refRollladen from '../assets/img/ref-rollladen.jpg'
-import refTerrasse from '../assets/img/ref-terrasse.jpg'
+import refTuer from '../assets/img/ref-tuer.webp'
+import refRollladen from '../assets/img/ref-rollladen.webp'
+import refTerrasse from '../assets/img/ref-terrasse.webp'
 
 /** Kontaktdaten laut Flyer */
 export const contact = {

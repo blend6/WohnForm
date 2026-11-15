@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import ServiceIcon from './ServiceIcon.vue'
 import { services } from '../data/site'
-import detail from '../assets/img/detail.jpg'
+import detail from '../assets/img/detail.webp'
 </script>
 
 <template>

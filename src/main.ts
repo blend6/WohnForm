@@ -1,5 +1,6 @@
-import { createApp } from 'vue'
+import { ViteSSG } from 'vite-ssg/single-page'
 import App from './App.vue'
 import './styles/main.css'
 
-createApp(App).mount('#app')
+/* Statisch vorgerendert (SEO): vite-ssg erzeugt beim Build fertiges HTML, im Browser wird hydratisiert */
+export const createApp = ViteSSG(App)
