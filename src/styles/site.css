@@ -92,12 +92,17 @@ section[id],main[id]{scroll-margin-top:96px}
   transition:opacity .7s var(--e),visibility .7s;
 }
 .preloader.done{opacity:0;visibility:hidden}
-.pre-mark{width:110px;color:#fff}
-.pre-mark .dl{stroke-dasharray:200;stroke-dashoffset:200;animation:draw 1.5s var(--e) forwards}
+.pre-mark{width:180px;color:#fff}
+.pre-mark .pf{opacity:0;animation:pfade .9s var(--e) .5s forwards}
+@keyframes pfade{to{opacity:1}}
+.pre-mark .dl{stroke-dasharray:300;stroke-dashoffset:300;animation:draw 1.5s var(--e) forwards}
 .pre-mark .dl:nth-child(2){animation-delay:.12s}
 .pre-mark .dl:nth-child(3){animation-delay:.24s}
 .pre-mark .dl:nth-child(4){animation-delay:.36s}
 .pre-mark .dl:nth-child(5){animation-delay:.44s}
+.pre-mark .dl:nth-child(6){animation-delay:.5s}
+.pre-mark .dl:nth-child(7){animation-delay:.56s}
+.pre-mark .dl:nth-child(8){animation-delay:.62s}
 @keyframes draw{to{stroke-dashoffset:0}}
 .pre-word{
   font-weight:800;letter-spacing:.42em;font-size:.875rem;
@@ -118,8 +123,8 @@ section[id],main[id]{scroll-margin-top:96px}
   color:var(--ink);padding-block:12px;box-shadow:0 1px 0 var(--line);
 }
 .nav-brand{display:flex;align-items:center;gap:12px;flex:none}
-.brand-mark{width:38px;height:26px;color:currentColor}
-.brand-mark.lg{width:58px;height:40px}
+.brand-mark{width:72px;height:29px;color:currentColor;flex:none}
+.brand-mark.lg{width:126px;height:50px}
 .brand-text{display:flex;flex-direction:column;line-height:1}
 .brand-text b{font-weight:800;letter-spacing:.16em;font-size:1rem}
 .brand-text i{font-style:normal;font-size:.5625rem;letter-spacing:.2em;opacity:.62;margin-top:5px}
