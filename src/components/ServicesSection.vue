@@ -9,8 +9,8 @@ import detail from '../assets/img/detail.webp'
     <div class="wrap">
       <header class="sec-head">
         <p class="eyebrow reveal">Unsere Leistungen</p>
-        <h2 class="reveal">Alles für Ihre Gebäudehülle.</h2>
-        <p class="lead reveal">Sechs Gewerke, ein Ansprechpartner. Wir planen, liefern und montieren — sauber, termintreu und regional.</p>
+        <h2 class="reveal">Fenster, Türen &amp; Rollläden in Peiting.</h2>
+        <p class="lead reveal">Beratung, Aufmaß und fachgerechte Montage — WOHNFORM-BP ist Ihr Ansprechpartner für Fenster, Türen und weitere Leistungen in Peiting und Umgebung.</p>
       </header>
 
       <div class="cards">
